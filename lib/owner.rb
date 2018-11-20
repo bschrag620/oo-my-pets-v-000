@@ -57,9 +57,7 @@ class Owner
 
   def sell_pets
     self.pets.each do |species|
-      puts "species: #{species}"
-      pets[species].each do |pet|
-        puts "pet: #{pet}"
+      self.pets[species].each do |pet|
         pet.mood = "nervous"
       end
     end
