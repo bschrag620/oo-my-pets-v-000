@@ -56,12 +56,9 @@ class Owner
   end
 
   def sell_pets
-    self.pets.each do |species|
-      puts "species: #{self.pets[species]}"
-      if !self.pets[species].nil?
-        self.pets[species].each do |pet|
-          pet.mood = "nervous"
-        end
+    self.pets.keys.each do |species|
+      self.pets[species].each do |pet|
+        pet.mood = "nervous"
       end
     end
     @pets = {:fishes => [], :dogs => [], :cats => []}
