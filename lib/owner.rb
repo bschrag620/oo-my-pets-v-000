@@ -48,4 +48,10 @@ class Owner
       cat.mood = "happy"
     end
   end
+
+  def feed_fish
+    self.pets[:fishes].each do |fish|
+      fish.mood = "happy"
+    end
+  end
 end
