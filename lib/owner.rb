@@ -57,6 +57,7 @@ class Owner
 
   def sell_pets
     self.pets.each do |species|
+      puts "species: #{species}"
       if !self.pets[species].nil?
         self.pets[species].each do |pet|
           pet.mood = "nervous"
