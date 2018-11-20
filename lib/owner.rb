@@ -58,7 +58,8 @@ class Owner
   def sell_pets
     self.pets.each do |species|
       self.pets[species].each do |pet|
-        pet.mood = "nervous" if !pet.nil?
+        if !pet.nil?
+          pet.mood = "nervous"
       end
     end
     @pets = {:fishes => [], :dogs => [], :cats => []}
