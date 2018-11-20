@@ -63,4 +63,7 @@ class Owner
     end
     @pets = {:fishes => [], :dogs => [], :cats => []}
   end
+
+  def list_pets
+    
 end
